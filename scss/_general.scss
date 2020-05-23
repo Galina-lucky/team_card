@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:after, :before {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0;
+}
+
+%controls-transition {
+	-webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,opacity .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,opacity .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,opacity .15s ease-in-out;
+    cursor: pointer;
+}
+
+a,
+button {
+	@extend %controls-transition;
+}
+
+input {
+	&[type=button],
+	&[type=submit] {
+		 @extend %controls-transition;
+	}
+}
+
+html,
+body {
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	font-weight: 500;
+	line-height: $line-height;
+	color: $color-secondary;
+	height: auto;
+	background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
