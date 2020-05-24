@@ -180,6 +180,7 @@ img {
 .header__slogan {
   font-size: 18px;
   line-height: ‭1 0.333333;
+  text-transform: uppercase;
 }
 .header__title {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -194,7 +195,6 @@ img {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 36px;
   line-height: 1;
-  color: #666666;
   font-weight: 700;
 }
 
@@ -202,7 +202,6 @@ img {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: 24px;
   line-height: 1.5;
-  color: #666666;
   font-weight: 400;
 }
 
@@ -278,6 +277,19 @@ img {
   color: #cccccc;
   line-height: 1;
   padding-top: 6px;
+  outline: transparent;
+}
+.share__icons:hover {
+  border-color: #FB001E;
+  color: #FB001E;
+}
+.share__icons:focus {
+  border-color: #5900a2;
+  color: #5900a2;
+}
+.share__icons:active {
+  border-color: #9e0a47;
+  color: #9e0a47;
 }
 
 .btn {
@@ -302,8 +314,43 @@ img {
           box-shadow: none;
 }
 
+.slider-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50px;
+  height: 12px;
+  outline: transparent;
+}
+.slider-controls__bullets {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #ffcc00;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+.slider-controls__bullets:hover {
+  background-color: #FB001E;
+}
+.slider-controls__bullets:focus {
+  background-color: #5900a2;
+}
+.slider-controls__bullets:active {
+  background-color: transparent;
+  border-color: #ffcc00;
+}
+
 .card {
   width: 1170px;
+  height: 560px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 90px;
@@ -318,7 +365,7 @@ img {
   left: 50%;
   top: 0;
   width: 2px;
-  height: 560px;
+  height: 100%;
   background-color: #ffcc00;
 }
 .card__img {
@@ -373,6 +420,18 @@ img {
   position: relative;
   margin-bottom: 50px;
 }
+.card__info:after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(to right, #ffcc00 10px, transparent 10px, transparent 15px, #ffcc00 15px, #ffcc00 35px, transparent 35px, transparent 40px, #ffcc00 40px);
+}
 .card__btn {
   text-transform: uppercase;
   color: #666666;
@@ -385,6 +444,13 @@ img {
 }
 .card__btn:active {
   border-color: #9e0a47;
+}
+.card__slider-controls {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -40px;
 }
 
 /*# sourceMappingURL=main.css.map */
