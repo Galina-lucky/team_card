@@ -280,8 +280,9 @@ img {
   outline: transparent;
 }
 .share__icons:hover {
-  border-color: #FB001E;
-  color: #FB001E;
+  color: #fff;
+  border-color: #2d2d2d;
+  background-color: #cccccc;
 }
 .share__icons:focus {
   border-color: #5900a2;

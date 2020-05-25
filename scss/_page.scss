@@ -55,7 +55,6 @@
 	font-family: $font-family-secondary;
 	font-size: 36px;
 	line-height: 1;
-	// color: $color-secondary;
 	font-weight: 700;
 }
 
@@ -63,7 +62,6 @@
 	font-family: $font-family-base;
 	font-size: 24px;
 	line-height: $line-height;
-	// color: $color-secondary;
 	font-weight: 400;
 }
 
@@ -136,8 +134,12 @@
 		outline: transparent;
 
 		&:hover {
-			border-color: $color-btn-hover;
-			color: $color-btn-hover;
+			// border-color: $color-btn-hover;
+			// color: $color-btn-hover;
+			color: #fff;
+			border-color: #2d2d2d;
+			background-color: $color-icons;
+
 		}
 
 		&:focus {
