@@ -13,57 +13,68 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<main class="main">
-		<header class="header">
-			<h3 class="header__slogan">The genuses behind our work</h3>
+	<header class="header">
+		<div class="container">
+			<p class="header__slogan">The genuses behind our work</p>
 			<h1 class="header__title">Our team</h1>
-		</header>
-			<div class="card">
-				<div class="row">
-					<div class="col-6">
-						<a class="transition card__transition--left" href="#" title="Предыдущий"></a>
-						<div class="corner-border">
-							<img class="card__img" src="img/photo.jpg" alt="Photo">
-						</div>
-					</div>
-					<div class="col-6">
-						<div class="card__description">
-							<h3 class="title card__title">Sahariar Kabir</h3>
-							<h4 class="lead card__lead">Frontend Developer</h4>
-							<ul class="share card__share">
-								<li>
-									<a class="share__icons" href="#" title="Поделиться в Facebook"><i class="fab fa-facebook-f"></i></a>
-								</li>
-								<li>
-									<a class="share__icons" href="#" title="Поделиться в Twitter"><i class="fab fa-twitter"></i></a>
-								</li>
-								<li>
-									<a class="share__icons" href="#"><i class="fab fa-google-plus-g"></i></a>
-								</li>
-								<li>
-									<a class="share__icons" href="#"><i class="fab fa-linkedin-in"></i></a>
-								</li>
-							</ul>							
-							<!-- <div class="share">
-								<a class="share__icons" href="#"><i class="fab fa-facebook-f"></i></a>
-								<a class="share__icons" href="#"><i class="fab fa-twitter"></i></a>
-								<a class="share__icons" href="#"><i class="fab fa-google-plus-g"></i></a>
-								<a class="share__icons" href="#"><i class="fab fa-linkedin-in"></i></a>
-							</div> -->
-							<p class="info card__info">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus dui sit amet ligula efficitur, sit amet lacinia massa dictum. Etiam accumsan felis a nunc facilisis, ut euismod lacus placerat. Praesent rutrum eget massa a convallis. Nam vitae augue malesuada, accumsan mauris ut, consectetur.
-							</p>
-							<a class="transition card__transition--right" href="#" title="Следующий"></a>
-							<a class="btn card__btn" href="#">View profile</a>
+		</div>
+	</header>
+	<main class="main">
+		<div class="container">
+			<div class="slider">
+				<a class="slider__arrow slider__arrow--left" href="#" title="Previous"></a>
+				<div class="slider__item">
+					<div class="user-card">
+						<div class="row">
+							<div class="col-6">
+								<div class="wrapper-photo">
+									<img class="user-card__photo img-responsive" src="img/photo.jpg" alt="User photo">
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="info user-card__info">
+									<h2 class="user-card__name">Sahariar Kabir</h2>
+									<p class="user-card__post">Frontend Developer</p>
+									<ul class="social-list user-card__social-list">
+										<li class="social-list__item">
+											<a class="social-list__icon" href="#" title="Поделиться в Facebook">
+												<i class="fab fa-facebook-f"></i>
+											</a>
+										</li>
+										<li class="social-list__item">
+											<a class="social-list__icon" href="#" title="Поделиться в Twitter">
+												<i class="fab fa-twitter"></i>
+											</a>
+										</li>
+										<li class="social-list__item">
+											<a class="social-list__icon" href="#">
+												<i class="fab fa-google-plus-g"></i>
+											</a>
+										</li>
+										<li class="social-list__item">
+											<a class="social-list__icon" href="#">
+												<i class="fab fa-linkedin-in"></i>
+											</a>
+										</li>
+									</ul>							
+
+									<p class="user-card__about">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus dui sit amet ligula efficitur, sit amet lacinia massa dictum. Etiam accumsan felis a nunc facilisis, ut euismod lacus placerat. Praesent rutrum eget massa a convallis. Nam vitae augue malesuada, accumsan mauris ut, consectetur.
+									</p>
+									<a class="btn" href="#">View profile</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="slider-controls card__slider-controls">
-					<a class="slider-controls__bullets" href="#"></a>
-					<a class="slider-controls__bullets" href="#"></a>
-					<a class="slider-controls__bullets" href="#"></a>
-				</div>
+				<a class="slider__arrow slider__arrow--right" href="#" title="Next"></a>
+				<div class="bullets slider__bullets">
+					<a class="bullets__control" href="#"></a>
+					<a class="bullets__control bullets__control--active" href="#"></a>
+					<a class="bullets__control" href="#"></a>
+				</div>	
 			</div>
+		</div>	
 	</main>
 </body>
 </html>

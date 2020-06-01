@@ -46,7 +46,7 @@ body {
 	background-color: #fff;
 }
 
-img {
+.img-responsive {
     max-width: 100%;
     height: auto;
 }
@@ -61,5 +61,9 @@ img {
 	&:after {
 		clear: both;
 	}
+}
+
+a {
+	text-decoration: none;
 }
 
